@@ -1,4 +1,6 @@
 import streamlit as st
 
-st.title('프로젝트')
-    
+def certi():
+    st.title('경력사항 입니다.')
+
+

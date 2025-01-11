@@ -1,4 +1,5 @@
 import streamlit as st
 
-st.title('프로젝트')
+def resume():
+    st.title('이력사항입니다.')
     
