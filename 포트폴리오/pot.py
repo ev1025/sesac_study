@@ -98,9 +98,29 @@ css = '''
     bottom: 20px;
     right: 20px;
     }
+
+    /* ------- 깃허브 -------- */
     .stLinkButton {
     display: flex;
     justify-content: flex-end; /* 가로 방향 오른쪽 끝 정렬 */
+    }
+    .st-emotion-cache-1mcbg9u.e16zdaao0 {
+    background-color: #000000; /* 배경색 */
+    color: white;             /* 글자색 */  
+
+    border: none;       /* 기본 테두리 제거 */
+    outline: none;      /* 외곽선 제거 */
+    }
+    .st-emotion-cache-1mcbg9u.e16zdaao0:hover {
+    outline: none; /* 호버 시 외곽선 제거 */
+    border: none;  /* 호버 시 테두리 제거 */
+    }
+    .st-emotion-cache-1mcbg9u.e16zdaao0:focus,
+    .st-emotion-cache-1mcbg9u.e16zdaao0:active {
+    outline: none;      /* 포커스 시 외곽선 제거 */
+    border: none;       /* 포커스 시 테두리 제거 */
+    color: white;       /* 글자색 흰색 유지 */
+    background-color: #000000; /* 배경색 유지 */
     }
 </style>
 '''
@@ -108,7 +128,7 @@ st.markdown(css, unsafe_allow_html=True)
 
 # state 초기화 / 연도 생성 / 네비게이션 생성
 options = ["2023", "2024", "2025"]
-year = st.pills("", options, selection_mode="single", default="2025", label_visibility="collapsed") # collapsed, visible
+year = st.pills("a", options, selection_mode="single", default="2025", label_visibility="hidden") # collapsed, visible
 year = year or "2025"
 
 # 자기소개
