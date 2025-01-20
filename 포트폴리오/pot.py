@@ -165,3 +165,14 @@ if page.title in ['소개', '이력사항','경력사항']:
     st.markdown("<style>[data-testid='stButtonGroup'] {display: none;}</style>", unsafe_allow_html=True)
 else:
     st.markdown("<style>[data-testid='stButtonGroup'] {display: block;}</style>", unsafe_allow_html=True)
+
+
+# /* 호버 확대 */
+# [data-testid="stHorizontalBlock"] img {
+# transition: transform 0.3s ease;
+# }
+# [data-testid="stHorizontalBlock"] img:hover {
+# transform: scale(1.8); /* 확대 크기*/
+# position: relative;
+# z-index: 9999;
+# }
