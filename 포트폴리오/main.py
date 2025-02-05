@@ -2,6 +2,7 @@
 import streamlit as st
 from project import intro, alter_credit, math_teacher, happy_dog_map, certi, resume
 
+
 st.set_page_config(page_title = "이진우 포트폴리오입니다.", page_icon = ":sunglasses:")
 
 # 네비게이션 로고, 기본 로고
@@ -99,18 +100,33 @@ css = '''
     right: 20px;
     }
 
+    /* 프로젝트 제목 */
+    [id="5118a375"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    }
+
+    /* 프로젝트 제목 상단 [주제] */
+    .st-emotion-cache-1b3332t {
+    margin-top: 10px;  /* 위쪽 여백 */
+    margin-bottom: 10px; /* 아래쪽 여백 */
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(126, 123, 123);
+    }
+
     /* ------- 깃허브 -------- */
     .stLinkButton {
     display: flex;
     justify-content: flex-end; /* 가로 방향 오른쪽 끝 정렬 */
     }
-    .st-emotion-cache-1mcbg9u.e16zdaao0 {
+    .st-emotion-cache-1mcbg9u.eeng2fo2 {
     background-color: #000000; /* 배경색 */
-    color: white;             /* 글자색 */  
-
+    font-color: #FFFFFF;       /* 글자색 */
     border: none;       /* 기본 테두리 제거 */
     outline: none;      /* 외곽선 제거 */
     }
+    
     .st-emotion-cache-1mcbg9u.e16zdaao0:hover {
     outline: none; /* 호버 시 외곽선 제거 */
     border: none;  /* 호버 시 테두리 제거 */
@@ -125,6 +141,8 @@ css = '''
 </style>
 '''
 st.markdown(css, unsafe_allow_html=True)
+
+
 
 # state 초기화 / 연도 생성 / 네비게이션 생성
 options = ["2023", "2024", "2025"]
