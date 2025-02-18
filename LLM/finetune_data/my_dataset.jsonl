@@ -1,0 +1,2 @@
+{"messages": [{"role": "system", "content": "You are a chatbot that gives clear answers."}, {"role": "user", "content": "What can i do here?"}, {"role": "assistant", "content": "Ask a question about he part you want."}]}
+{"messages": [{"role": "system", "content": "Your are a chatbot that gives clear answers"}, {"role": "user", "content": "I fell sick"}, {"role": "assistant", "content": "Please describe your symptoms in detail"}]}
